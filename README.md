@@ -2,16 +2,29 @@
 
 
 
-# React Signature Pad
-### forked 项目 react-signature-pad，修改源码去除canvas缩放,自适应手机宽度,添加自定义 height（默认值200） 和width (默认值window.innerWidth)
-A [signature pad](https://github.com/xianzou/react-signature-phone) implementation for react.
-B 原项目地址[react-signature-pad](https://github.com/blackjk3/react-signature-pad)
+# React Signature phone
+### forked 项目 react-signature-pad
 
-# Basic Usage
+- react版本的移动端电子签名
+- 修改源码去除canvas缩放,自适应手机宽度
+- 添加自定义 height（默认值200） 和width (默认值window.innerWidth)
+- 原项目地址[react-signature-pad](https://github.com/blackjk3/react-signature-pad)
+
+## 安装
+
+```bash
+$ yarn add react-signature-phone
+or
+$ npm install react-signature-phone
+```
+
+
+
+# 使用方式
 
 ```javascript
-var React = require('react');
-var SignaturePad = require('react-signature-pad');
+import React from 'react';
+import SignaturePad from 'react-signature-pad';
 
 React.render(
   <SignaturePad clearButton="true" width={300} height={150} />,
@@ -19,7 +32,7 @@ React.render(
 )
 ```
 
-# Methods
+# 方法
 
 ```javascript
 <SignaturePad clearButton="true" ref="mySignature" />
@@ -42,13 +55,13 @@ signature.isEmpty();
 signature.clear();
 
 // ===============================================
-// toDataURL() - retrieves image as a data url
+// toDataURL() - 将canvas转化成base64图
 // ===============================================
 
 signature.toDataURL();
 
 // ===============================================
-// fromDataURL() - writes a base64 image to canvas
+// fromDataURL() - 将base64图写入canvas
 // ===============================================
 
 signature.fromDataURL(base64String);
@@ -56,10 +69,10 @@ signature.fromDataURL(base64String);
 ```
 
 # CSS
-In order to make the signature pad work correctly you will need the css as well.  All the relevant styles are in [this file](style.css).
+一般不需要样式，如果需要样式点击这里： [this file](style.css),
 
 # Example
 ```bash
-$ npm start
+$ yarn start
 ```
-Then navigate to http://localhost:8080/ in your browser and you should be able to see the signature pad in action.
+打开浏览器访问http://localhost:8080/ 

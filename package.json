@@ -1,7 +1,7 @@
 {
   "name": "react-signature-phone",
-  "version": "0.0.6",
-  "description": "手机版本react的canvas签名，修改自blackjk3/react-signature-pad",
+  "version": "1.0.1",
+  "description": "移动端react的canvas签名",
   "main": "lib/app.js",
   "scripts": {
     "test": "webpack && npm pack",
@@ -13,7 +13,9 @@
     "react-component",
     "signature",
     "form",
-    "ui"
+    "ui",
+    "canvas",
+    "电子签名"
   ],
   "repository": {
     "type": "git",
